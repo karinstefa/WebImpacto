@@ -9,13 +9,14 @@ export default function Commitment() {
       <div className="container commitment__grid">
         <Reveal delay={80} className="commitment__media">
           <figure>
-            <img
+            <video
               className="commitment__img"
-              src={commitment.image}
-              alt={commitment.imageAlt}
-              width="1600"
-              height="592"
-              loading="lazy"
+              src={`${import.meta.env.BASE_URL}img/hero-bg.mp4`}
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-hidden="true"
             />
           </figure>
         </Reveal>
