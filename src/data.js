@@ -67,27 +67,27 @@ export const about = {
 
 export const formation = [
   {
-    icon: "/img/form-abogado.png",
+    icon: `${import.meta.env.BASE_URL}img/form-abogado.png`,
     degree: "Abogado",
     school: "Universidad Libre de Colombia",
   },
   {
-    icon: "/img/form-magister.png",
+    icon: `${import.meta.env.BASE_URL}img/form-magister.png`,
     degree: "Magíster en Derecho Constitucional",
     school: "Universidad Libre de Colombia",
     note: "Tesis sobre Lawfare en América Latina",
   },
   {
-    icon: "/img/form-penal.png",
+    icon: `${import.meta.env.BASE_URL}img/form-penal.png`,
     degree: "Especialización en Ciencias Penales y Criminológicas",
     school: "Universidad Externado de Colombia",
   },
   {
-    icon: "/img/form-constitucional.png",
+    icon: `${import.meta.env.BASE_URL}img/form-constitucional.png`,
     degree: "Especialización en Derecho Constitucional",
   },
   {
-    icon: "/img/form-economia.png",
+    icon: `${import.meta.env.BASE_URL}img/form-economia.png`,
     degree: "Estudios de Posgrado en Economía",
     school: "Universidad de los Andes",
   },
@@ -166,7 +166,7 @@ export const timeline = [
 export const commitment = {
   eyebrow: "Cap. 05 · Compromiso social",
   title: "El derecho como servicio",
-  image: "/img/compromiso.jpg",
+  image: `${import.meta.env.BASE_URL}img/compromiso.jpg`,
   imageAlt: "Sebastián Caballero Ortega durante una jornada de compromiso social",
   items: [
     {
@@ -225,21 +225,21 @@ export const vision = {
 
 export const blogPosts = [
   {
-    image: "/img/blog-politica.jpg",
+    image: `${import.meta.env.BASE_URL}img/blog-politica.jpg`,
     imageAlt: "Imagen de contexto del artículo sobre política",
     category: "Política",
     date: "5 de septiembre de 2025",
     title: "Primera Línea Jurídica: orígenes y propósito",
   },
   {
-    image: "/img/blog-ffie.jpg",
+    image: `${import.meta.env.BASE_URL}img/blog-ffie.jpg`,
     imageAlt: "Imagen de contexto del artículo sobre el FFIE",
     category: "Gobierno",
     date: "5 de septiembre de 2025",
     title: "¿Qué es el FFIE y cuáles son sus prioridades?",
   },
   {
-    image: "/img/blog-justicia.jpg",
+    image: `${import.meta.env.BASE_URL}img/blog-justicia.jpg`,
     imageAlt: "Imagen de contexto del artículo sobre justicia",
     category: "Justicia",
     date: "17 de agosto de 2025",

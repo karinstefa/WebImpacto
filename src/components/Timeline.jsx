@@ -28,7 +28,7 @@ export default function Timeline() {
               <div className="timeline__frame-inner">
                 <img
                   className="timeline__img photo-bn"
-                  src="/img/momentos.png"
+                  src={`${import.meta.env.BASE_URL}img/momentos.png`}
                   alt="Momentos que marcaron la trayectoria de Sebastián Caballero Ortega"
                   width="1280"
                   height="720"

@@ -20,11 +20,11 @@ export default function Hero() {
           muted
           loop
           playsInline
-          poster="/img/about-portrait.png"
+          poster={`${import.meta.env.BASE_URL}img/about-portrait.png`}
           aria-hidden="true"
           tabIndex={-1}
         >
-          <source src="/img/hero-bg.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}img/hero-bg.mp4`} type="video/mp4" />
         </video>
       )}
       <div className="hero__scrim" aria-hidden="true" />
@@ -63,7 +63,7 @@ export default function Hero() {
             <SparkDoodle className="hero__spark" />
             <img
               className="hero__photo photo-bn"
-              src="/img/hero-portrait.png"
+              src={`${import.meta.env.BASE_URL}img/hero-portrait.png`}
               alt="Retrato oficial de Sebastián Caballero Ortega"
               width="1280"
               height="720"
