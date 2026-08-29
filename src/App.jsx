@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Marquee from "./components/Marquee.jsx";
@@ -14,6 +16,17 @@ import Footer from "./components/Footer.jsx";
 import { slogans } from "./data.js";
 
 export default function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const target = location.state?.scrollTo;
+    if (!target) return;
+    const el = document.getElementById(target);
+    if (el) {
+      window.scrollTo({ top: el.offsetTop - 90, behavior: "smooth" });
+    }
+  }, [location.state]);
+
   return (
     <>
       <a className="skip-link" href="#inicio">

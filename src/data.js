@@ -88,7 +88,7 @@ export const formation = [
   },
   {
     icon: `${import.meta.env.BASE_URL}img/form-economia.png`,
-    degree: "Estudios de Posgrado en Economía",
+    degree: "Especialización en Economía",
     school: "Universidad de los Andes",
   },
 ];
@@ -101,7 +101,6 @@ export const experience = {
       {
         title: "Gerente del FFIE",
         sub: "Fondo de Financiamiento de la Infraestructura Educativa",
-        badge: "Actual",
       },
       {
         title: "Vicepresidente Jurídico de la SAE",
@@ -225,6 +224,7 @@ export const vision = {
 
 export const blogPosts = [
   {
+    slug: "primera-linea-juridica",
     image: `${import.meta.env.BASE_URL}img/blog-politica.jpg`,
     imageAlt: "Imagen de contexto del artículo sobre política",
     category: "Política",
@@ -232,6 +232,7 @@ export const blogPosts = [
     title: "Primera Línea Jurídica: orígenes y propósito",
   },
   {
+    slug: "ffie-prioridades",
     image: `${import.meta.env.BASE_URL}img/blog-ffie.jpg`,
     imageAlt: "Imagen de contexto del artículo sobre el FFIE",
     category: "Gobierno",
@@ -239,6 +240,7 @@ export const blogPosts = [
     title: "¿Qué es el FFIE y cuáles son sus prioridades?",
   },
   {
+    slug: "democratizar-lo-publico",
     image: `${import.meta.env.BASE_URL}img/blog-justicia.jpg`,
     imageAlt: "Imagen de contexto del artículo sobre justicia",
     category: "Justicia",
@@ -274,3 +276,242 @@ export const footer = {
   formTitle: "Escríbeme",
   formNote: "Tu mensaje se abrirá en tu aplicación de correo, listo para enviarse.",
 };
+
+export const articles = [
+  {
+    slug: "primera-linea-juridica",
+    title: "Primera Línea Jurídica: orígenes y propósito",
+    category: "Política",
+    date: "5 de septiembre de 2025",
+    image: `${import.meta.env.BASE_URL}img/blog-politica.jpg`,
+    imageAlt: "Imagen de contexto del artículo sobre política",
+    source: {
+      label: "sebastiancaballero.info/primera-linea-juridica",
+      url: "https://sebastiancaballero.info/primera-linea-juridica/",
+    },
+    body: [
+      {
+        type: "paragraph",
+        content:
+          "La **Primera Línea Jurídica** surgió en 2021 como **red de abogados** que ofreció **asistencia legal gratuita** a manifestantes durante el Paro Nacional. Fue impulsada por juristas como **Augusto Ocampo** y **Miguel Ángel del Río**, con capítulos en varias ciudades y cientos de profesionales voluntarios. Aquí contamos qué es, por qué nació y qué hacía en terreno.",
+      },
+      {
+        type: "links",
+        links: [
+          { text: "Infobae", url: "https://www.infobae.com/america/colombia/2021/05/30/crean-la-primera-linea-juridica-para-defender-manifestantes-en-el-paro-nacional/" },
+          { text: "El Espectador", url: "https://www.elespectador.com/judicial/primera-linea-de-defensores-de-la-protesta-a-imputados-por-terrorismo/" },
+        ],
+      },
+      {
+        type: "heading",
+        content: "¿Qué es?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Una **red nacional de defensa** que brindó orientación, reacción a capturas y acompañamiento procesal a personas que ejercían el **derecho a la protesta**. Diversos reportes periodísticos y académicos registran su despliegue y cobertura.",
+      },
+      {
+        type: "links",
+        links: [
+          { text: "RTVE", url: "https://www.rtve.es/noticias/20210603/colombia-defensa-gratuita-para-detenidos-protestas/2098200.shtml" },
+          { text: "Pressenza", url: "https://www.pressenza.com/es/2021/08/quien-es-la-primera-linea-juridica/" },
+        ],
+      },
+      {
+        type: "heading",
+        content: "¿Cómo nació y quiénes la impulsaron?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Crónicas y entrevistas sitúan su **gestación en mayo–julio de 2021**; Infobae atribuye la idea inicial a **Augusto Ocampo** y reseña el trabajo articulado con **Miguel Ángel del Río** y otros; El Espectador recoge el relato de Del Río sobre la conformación de la red.",
+      },
+      {
+        type: "heading",
+        content: "¿Qué hacía en la práctica?",
+      },
+      {
+        type: "list",
+        items: [
+          "Recepción de casos en puntos de protesta.",
+          "**Asistencia inmediata** frente a capturas y verificación de garantías.",
+          "**Pedagogía constitucional** básica para manifestantes.",
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "Coberturas hablan de **cientos** (RTVE reportó 800) y hasta **miles** de abogados inscritos (estimaciones en medios universitarios), lo que refleja un despliegue amplio y descentralizado.",
+      },
+      {
+        type: "links",
+        links: [
+          { text: "RTVE", url: "https://www.rtve.es/noticias/20210603/colombia-defensa-gratuita-para-detenidos-protestas/2098200.shtml" },
+          { text: "Unimedios Medellín", url: "https://unimedios.medellin.unal.edu.co/bitacora/conexion/914-las-primeras-lineas-protagonistas-en-las-manifestaciones.html" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ffie-prioridades",
+    title: "¿Qué es el FFIE y cuáles son sus prioridades?",
+    category: "Gobierno",
+    date: "5 de septiembre de 2025",
+    image: `${import.meta.env.BASE_URL}img/blog-ffie.jpg`,
+    imageAlt: "Imagen de contexto del artículo sobre el FFIE",
+    source: {
+      label: "sebastiancaballero.info/hello-world-2",
+      url: "https://sebastiancaballero.info/hello-world-2/",
+    },
+    body: [
+      {
+        type: "heading",
+        content: "Fondo de Financiamiento de la Infraestructura Educativa",
+      },
+      {
+        type: "paragraph",
+        content:
+          "El Fondo de Financiamiento de la Infraestructura Educativa (FFIE) es una **cuenta especial del Ministerio de Educación** (sin personería jurídica) creada por ley para viabilizar y financiar proyectos de **infraestructura educativa física y digital** en todo el país. Su marco actual se rige por el **Decreto 1433 de 2020** y lineamientos técnicos que priorizan transparencia, eficiencia y control. Aquí explicamos su naturaleza, cómo opera y sus prioridades presentes.",
+      },
+      {
+        type: "links",
+        links: [
+          { text: "Función Pública", url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=144973" },
+          { text: "Alcaldía de Bogotá", url: "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=101373" },
+        ],
+      },
+      {
+        type: "heading",
+        content: "Naturaleza y objeto",
+      },
+      {
+        type: "paragraph",
+        content:
+          "El FFIE canaliza recursos de diversas fuentes para **construcción, mejoramiento, ampliación y dotación** de sedes educativas de educación inicial, preescolar, básica y media (incluye interventorías). Es **instrumento financiero del MEN** sin personería jurídica, creado por el art. 59 de la Ley 1753/2015 (mod. art. 184 Ley 1955/2019) y reglamentado por el Decreto 1433/2020.",
+      },
+      {
+        type: "links",
+        links: [
+          { text: "Función Pública", url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=144973" },
+          { text: "Ministerio de Educación Nacional", url: "https://www.mineducacion.gov.co/1759/articles-356180_recurso_11.pdf" },
+        ],
+      },
+      {
+        type: "heading",
+        content: "Cómo funciona",
+      },
+      {
+        type: "paragraph",
+        content:
+          "El FFIE cuenta con **Junta Administradora** (prioriza proyectos) y una **Unidad de Gestión** (ejecuta esquemas para diseñar, contratar y hacer seguimiento a obras). Su portal y micrositios publican misiones, proyectos y documentos/circulares para la trazabilidad pública.",
+      },
+      {
+        type: "links",
+        links: [
+          { text: "Ministerio de Educación Nacional", url: "https://www.mineducacion.gov.co/1759/articles-351433_recurso_1.pdf" },
+          { text: "FFIE — Conócenos", url: "https://ffie.com.co/conocenos/" },
+        ],
+      },
+      {
+        type: "heading",
+        content: "Prioridades actuales",
+      },
+      {
+        type: "list",
+        items: [
+          "**Transparencia y anticorrupción** (Política UG-FFIE, versión vigente), con obligaciones para contratistas y mecanismos de control.",
+          "**Ejecución territorial** con seguimiento a proyectos y convocatorias, además de reportes y listados de proveedores.",
+        ],
+      },
+      {
+        type: "links",
+        links: [
+          { text: "Política Anticorrupción UG-FFIE", url: "https://ffie.com.co/wp-content/uploads/2025/08/PO-PM-03-02-POLITICA-ANTICORRUPCION-UG-FFIE-V3.pdf" },
+          { text: "Ministerio de Educación Nacional — listado de proveedores", url: "https://www.mineducacion.gov.co/portal/micrositios-preescolar-basica-y-media/Infraestructura/424867%3AFFIE-publica-listado-de-posibles-proveedores-para-obras-de-infraestructura-educativa-garantizando-transparencia-en-los-procesos-de-seleccion" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "democratizar-lo-publico",
+    title: "Democratizar lo público con técnica y garantías",
+    category: "Justicia",
+    date: "17 de agosto de 2025",
+    image: `${import.meta.env.BASE_URL}img/blog-justicia.jpg`,
+    imageAlt: "Imagen de contexto del artículo sobre justicia",
+    source: {
+      label: "sebastiancaballero.info/hello-world",
+      url: "https://sebastiancaballero.info/hello-world/",
+    },
+    body: [
+      {
+        type: "paragraph",
+        content:
+          "**Resumen.** La Nueva Prensa publicó una conversación con Sebastián Caballero —entonces vicepresidente jurídico de la Sociedad de Activos Especiales (SAE)— en la que expone su ruta profesional, su visión sobre apertura democrática y el sentido público de la administración de bienes del Estado. Este artículo recoge los puntos esenciales para nuestros lectores.",
+      },
+      {
+        type: "links",
+        links: [
+          { text: "La Nueva Prensa — Entrevista con Sebastián Caballero", url: "https://www.lanuevaprensa.com.co/component/k2/entrevista-con-sebastian-caballero-cabeza-juridica-de-la-sae" },
+        ],
+      },
+      {
+        type: "heading",
+        content: "Vocación y formación en derechos humanos",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Caballero relata que su práctica jurídica se forjó en entornos de alto impacto, iniciándose en el Colectivo de Abogados Jorge Alvear/Albear Restrepo y trabajando en casos emblemáticos de la memoria judicial del país. Esa experiencia consolidó su foco en garantías y en el valor democrático del debido proceso.",
+      },
+      {
+        type: "heading",
+        content: "Apertura democrática y personería jurídica",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Desde su trabajo político-jurídico, integró el equipo que defendió la personería de Colombia Humana, destacando que reconocer derechos de participación fortalece el contrato social y reduce escenarios de exclusión. En ese marco, ha estudiado y expuesto el fenómeno del *lawfare* en América Latina como instrumentalización de la justicia, un riesgo frente al cual propone respuestas con evidencia y controles.",
+      },
+      {
+        type: "heading",
+        content: "Acompañamiento a la protesta social",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Durante el estallido social de 2021, impulsó una red de defensa para jóvenes judicializados, conocida como Primera Línea Jurídica, con énfasis en asistencia técnica, documentación de casos y salvaguarda de garantías.",
+      },
+      {
+        type: "heading",
+        content: "Gestión en SAE: bienes para el interés público",
+      },
+      {
+        type: "paragraph",
+        content:
+          "En su paso por la SAE, sintetiza el propósito en una idea: democratizar los activos incautados para que sirvan a la gente, con más transparencia y controles frente a la corrupción. El enfoque combina orden jurídico, criterios objetivos de asignación y mejora de la eficiencia administrativa.",
+      },
+      {
+        type: "heading",
+        content: "Mirada de país y reformas",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Caballero subraya que la \"apertura democrática\" es el punto de partida de un Estado que escucha y corrige; por eso participa en espacios técnicos —como comisiones de empalme o de expertos— orientados a modernizar la justicia y elevar estándares de integridad institucional.",
+      },
+      {
+        type: "note",
+        content:
+          "La entrevista completa fue publicada el **13 de abril de 2024** en La Nueva Prensa. Invitamos a leerla para ampliar citas y contexto.",
+      },
+      {
+        type: "links",
+        links: [
+          { text: "La Nueva Prensa — Entrevista con Sebastián Caballero", url: "https://www.lanuevaprensa.com.co/component/k2/entrevista-con-sebastian-caballero-cabeza-juridica-de-la-sae" },
+        ],
+      },
+    ],
+  },
+];

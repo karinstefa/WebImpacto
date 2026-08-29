@@ -393,6 +393,14 @@ button {
     box-shadow 0.25s var(--ease-out);
 }
 
+button.btn {
+  background: none;
+  border: 3px solid var(--negro);
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
 .btn:active {
   transform: translate(2px, 2px);
   box-shadow: none;
@@ -1728,6 +1736,14 @@ button {
   border-bottom: 3px solid var(--negro);
 }
 
+.post__link {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: inherit;
+  text-decoration: none;
+}
+
 .post__img {
   aspect-ratio: 16 / 10;
   width: 100%;
@@ -2373,4 +2389,190 @@ button {
   ::-webkit-scrollbar-thumb:hover {
     background: var(--verde);
   }
+}
+
+/* ============================================================
+   Página de artículo (escritos)
+   ============================================================ */
+.article {
+  background: var(--crema);
+  color: var(--negro);
+  padding-top: var(--nav-h);
+  padding-bottom: 4rem;
+}
+
+.article--missing {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.article__404 {
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.article__inner {
+  max-width: 52rem;
+}
+
+.article__inner .btn {
+  text-decoration: none;
+}
+
+.article .article__back {
+  flex: none;
+}
+
+.article__title {
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(1.7rem, 4vw, 2.9rem);
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  color: var(--negro);
+  transform: rotate(var(--tilt));
+  transform-origin: left center;
+}
+
+.article__meta {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rojo);
+}
+
+.article__media {
+  margin-top: 2rem;
+  padding: 0.7rem;
+  background: var(--negro);
+  border: 3px solid var(--negro);
+  box-shadow: 0.7rem 0.7rem 0 var(--rojo);
+}
+
+.article__img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border: 3px solid var(--negro);
+}
+
+.article__body {
+  margin-top: 2.5rem;
+  font-size: 1.06rem;
+  line-height: 1.75;
+}
+
+.article__h3 {
+  margin-top: 2.2rem;
+  margin-bottom: 0.9rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 0.01em;
+  color: var(--rojo);
+}
+
+.article__p {
+  margin: 1rem 0;
+}
+
+.article__p strong,
+.article__h3 strong,
+.article__list strong {
+  color: var(--rojo);
+}
+
+.article__list {
+  margin: 1rem 0;
+  padding-left: 1.4rem;
+  list-style: none;
+}
+
+.article__list li {
+  position: relative;
+  margin: 0.6rem 0;
+}
+
+.article__list li::before {
+  content: "";
+  position: absolute;
+  left: -1.3rem;
+  top: 0.55rem;
+  width: 0.62rem;
+  height: 0.62rem;
+  background: var(--rojo);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.article__note {
+  margin: 1.5rem 0;
+  padding: 1.2rem 1.4rem;
+  background: var(--verde);
+  border: 3px solid var(--negro);
+  box-shadow: 0.5rem 0.5rem 0 var(--negro);
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.article__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1rem 0 1.4rem;
+}
+
+.article__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--crema);
+  background: var(--negro);
+  border: 2px solid var(--negro);
+  transition: background 0.2s var(--ease-out), color 0.2s var(--ease-out);
+}
+
+.article__link:hover {
+  background: var(--rojo);
+  border-color: var(--rojo);
+}
+
+.article__source {
+  margin-top: 2.5rem;
+  padding-top: 1.2rem;
+  border-top: 3px solid var(--negro);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--negro-72);
+}
+
+.article__source a {
+  color: var(--rojo);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 2px solid var(--rojo);
+}
+
+.article__source a:hover {
+  color: var(--negro);
+  border-bottom-color: var(--negro);
+}
+
+.article__nav {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
 }

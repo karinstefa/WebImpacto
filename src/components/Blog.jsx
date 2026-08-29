@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import { Link } from "react-router-dom";
 import { blogPosts } from "../data";
 
 export default function Blog() {
@@ -19,21 +20,23 @@ export default function Blog() {
         <div className="blog__grid">
           {blogPosts.map((post, i) => (
             <Reveal as="article" key={post.title} delay={i * 110} className="post sticker">
-              <div className="post__media">
-                <img
-                  className="post__img photo-bn"
-                  src={post.image}
-                  alt={post.imageAlt}
-                  width="980"
-                  height="613"
-                  loading="lazy"
-                />
-                <span className="post__cat">{post.category}</span>
-              </div>
-              <div className="post__body">
-                <p className="post__meta">Por Sebastián Caballero Ortega · {post.date}</p>
-                <h3 className="post__title">{post.title}</h3>
-              </div>
+              <Link className="post__link" to={`/articulo/${post.slug}`}>
+                <div className="post__media">
+                  <img
+                    className="post__img photo-bn"
+                    src={post.image}
+                    alt={post.imageAlt}
+                    width="980"
+                    height="613"
+                    loading="lazy"
+                  />
+                  <span className="post__cat">{post.category}</span>
+                </div>
+                <div className="post__body">
+                  <p className="post__meta">Por Sebastián Caballero Ortega · {post.date}</p>
+                  <h3 className="post__title">{post.title}</h3>
+                </div>
+              </Link>
             </Reveal>
           ))}
         </div>

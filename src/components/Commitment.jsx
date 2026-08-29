@@ -1,6 +1,6 @@
 import Reveal from "./Reveal";
 import Isotipo from "./Isotipo.jsx";
-import { commitment, slogans } from "../data";
+import { commitment } from "../data";
 
 export default function Commitment() {
   return (
