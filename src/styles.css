@@ -627,16 +627,15 @@ button.btn {
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  min-width: 0;
   flex: 1 1 auto;
+  min-width: 0;
+  gap: 0.6rem;
   color: var(--crema);
   --logo-ink: var(--crema);
   --logo-im-bg: var(--rojo);
   --logo-im-ink: var(--negro);
   --logo-o: var(--rojo);
   --logo-tag: var(--verde);
-  overflow: hidden;
 }
 
 .brand .logo-impacto {
@@ -657,8 +656,6 @@ button.btn {
   letter-spacing: 0.04em;
   color: var(--crema);
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   min-width: 0;
 }
 
@@ -667,7 +664,7 @@ button.btn {
   margin-top: 0.15rem;
   font-size: 0.56rem;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--verde);
 }
@@ -675,22 +672,23 @@ button.btn {
 .nav__links {
   display: flex;
   align-items: center;
-  gap: clamp(0.45rem, 1.1vw, 1rem);
+  gap: clamp(0.4rem, 0.6vw, 0.7rem);
   list-style: none;
 }
 
 #navegacion-principal {
-  flex: none;
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 .nav__link {
   position: relative;
   display: inline-flex;
   align-items: center;
-  padding: 0.7rem 0.2rem;
-  font-size: 0.76rem;
+  padding: 0.6rem 0.18rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--crema-85);
   transition: color 0.2s var(--ease-out);
