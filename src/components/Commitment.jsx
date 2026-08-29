@@ -10,7 +10,7 @@ export default function Commitment() {
         <Reveal delay={80} className="commitment__media">
           <figure>
             <img
-              className="commitment__img photo-bn"
+              className="commitment__img"
               src={commitment.image}
               alt={commitment.imageAlt}
               width="1600"
@@ -18,7 +18,6 @@ export default function Commitment() {
               loading="lazy"
             />
           </figure>
-          <span className="ribbon ribbon--negro commitment__ribbon">{slogans.yatoca}</span>
         </Reveal>
 
         <div>
