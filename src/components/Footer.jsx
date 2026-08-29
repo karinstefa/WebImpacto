@@ -142,8 +142,7 @@ export default function Footer() {
           <p className="footer__bottom-seal">
             <Isotipo aria-hidden="true" />
             <span>
-              Movimiento {movement.name} · {slogans.hacemos} ·{" "}
-              <span className="footer__handle">{movement.handle}</span>
+              Movimiento {movement.name} · {slogans.hacemos}
             </span>
           </p>
         </div>

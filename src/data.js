@@ -257,7 +257,6 @@ export const cta = {
 export const movement = {
   name: "IMPACTO",
   tagline: "HACEMOS QUE PASE",
-  handle: "@dagosa20",
 };
 
 export const slogans = {
