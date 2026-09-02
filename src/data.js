@@ -9,7 +9,7 @@ export const site = {
   lastName: "Ortega",
   tagline: "Abogado Constitucionalista — Defensor de Derechos Humanos",
   heroQuote: "Comprometido con la justicia, la democracia y la defensa de quienes no tienen voz.",
-  email: "karinestefa+demoweb@gmail.com",
+  email: "sebastian.caballero.ortega@gmail.com",
   socials: [
     {
       id: "instagram",
