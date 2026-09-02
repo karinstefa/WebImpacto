@@ -119,10 +119,7 @@ export default function ArticlePage() {
           </div>
 
           <p className="article__source">
-            Fuente:{" "}
-            <a href={article.source.url} target="_blank" rel="noreferrer">
-              {article.source.label}
-            </a>
+            Fuente: {article.source.label}
           </p>
 
           <div className="article__nav">

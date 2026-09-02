@@ -286,8 +286,7 @@ export const articles = [
     image: `${import.meta.env.BASE_URL}img/blog-politica.jpg`,
     imageAlt: "Imagen de contexto del artículo sobre política",
     source: {
-      label: "sebastiancaballero.info/primera-linea-juridica",
-      url: "https://sebastiancaballero.info/primera-linea-juridica/",
+      label: "Propia",
     },
     body: [
       {
@@ -361,8 +360,7 @@ export const articles = [
     image: `${import.meta.env.BASE_URL}img/blog-ffie.jpg`,
     imageAlt: "Imagen de contexto del artículo sobre el FFIE",
     source: {
-      label: "sebastiancaballero.info/hello-world-2",
-      url: "https://sebastiancaballero.info/hello-world-2/",
+      label: "Propia",
     },
     body: [
       {
@@ -441,8 +439,7 @@ export const articles = [
     image: `${import.meta.env.BASE_URL}img/blog-justicia.jpg`,
     imageAlt: "Imagen de contexto del artículo sobre justicia",
     source: {
-      label: "sebastiancaballero.info/hello-world",
-      url: "https://sebastiancaballero.info/hello-world/",
+      label: "Propia",
     },
     body: [
       {
